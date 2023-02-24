@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Name Of Player</title>
+    <h1>Extreme Maths Quiz</h1>
+    <link rel="stylesheet" href="../style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Shantell+Sans&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+</head>
+<body>
+	<form onsubmit="submitName(event)">
+		<label for="playerName">Please enter your name:</label>
+		<input type="text" id="playerName" name="playerName" required>
+		<button type="submit">Submit</button>
+	</form>
+
+    <a href="game.html"><button class="btn">Start!</button>
+
+	<script>
+		function submitName(event) {
+            event.preventDefault();
+            const playerName = document.getElementById('playerName').value;
+            alert('Thank you and Have fun, ' + playerName + '!');
+        }
+	</script>
+
+    <img src="https://thumbs.dreamstime.com/b/what-your-name-handwritten-white-background-208034779.jpg" class="center" height="550px">
+</body>
+</html>

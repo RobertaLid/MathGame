@@ -1,0 +1,163 @@
+
+body {
+  min-height: 90vh;
+  width: 99%;
+  background-image: url('../Mathgame/images/mathy.jpg');
+  color: #FFFFFF;
+  
+  background-position: center;
+  background-size: 100% 100%;
+}
+/* h1 and h3 text for the index, about and rules pages*/
+h1 {
+    text-align: center;
+    font-size: 8rem;
+    margin-bottom: 2rem;
+    font-family: 'Shantell Sans', cursive;
+  }
+
+  h3 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    font-family: 'Shantell Sans', cursive;
+  }
+
+  /* container boxes for the bg of text */
+  .container {
+    width: 80%;
+    margin: 0 auto;
+    background-color: rgb(37, 92, 58);
+    border: 5px solid black;
+    box-shadow: 8px 8px 20px grey;
+  }
+
+  form {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+
+  /* centering an image */
+  .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    border: 5px solid black;
+    box-shadow: 8px 8px 20px grey;
+  }
+
+    /* font size for when the player changes their name */
+  #playerName {
+    font-size: 20px;
+  }
+    /* settings for score tab on the game page */
+  #score {
+    text-align: center;
+    font-size: 4rem;
+    border-radius: 5px;
+    padding: 5px 10px;
+    color: rgb(255, 255, 255);
+    outline: black;
+    margin-bottom: 200px;
+    display: block;
+    font-family: 'Anton', sans-serif;
+  }
+    /* button settings */
+  .btn {
+    background-color: hsl(138, 88%, 48%);
+    border: 1px solid hsl(150, 33%, 37%);
+    border-radius: 5px;
+    padding: 5px 10px;
+    color: black;
+    outline: none;
+    margin: auto;
+    display: block;
+  }
+
+  .gamebtn {
+    background-color: hsl(138, 88%, 48%);
+    border: 1px solid hsl(150, 33%, 37%);
+    border-radius: 5px;
+    padding: 5px 10px;
+    color: black;
+    outline: none;
+  }
+
+  .btn-grid {
+  display: grid;
+  grid-template-columns: repeat(3, auto) ;
+  gap: 5px;
+  margin-top: 10px;
+  }
+
+  .btn:hover {
+    border-color: black;
+  }
+    /* settings for questions asked in game */ 
+  #question {
+    outline: none;
+    margin: auto;
+    display: block;
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Shantell Sans', cursive;
+  }
+    /* timer settings, timer ticks down and changes colour to red when reaches 5 seconds */
+  #timer {
+    text-align: center;
+    font-size: 8rem;
+    border-radius: 5px;
+    padding: 5px 10px;
+    color: rgb(255, 255, 255);
+    outline: black;
+    margin: auto;
+    display: block;
+    font-family: 'Anton', sans-serif;
+  }
+    /* navbar used in the game at the top of the screen */
+  nav {
+    background-color: #333; /* set the background color of the navbar */
+    overflow: hidden; /* clears floats */
+    text-align: center;
+  }
+  
+  nav ul {
+    list-style-type: none; /* remove bullet points from the list */
+    margin: 0;
+    padding: 0;
+    justify-content: space-between;
+  }
+  
+  nav li {
+    display: inline-block; /* display the list items inline */
+    margin-right: 100px;
+  }
+  
+  nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 50px; /* change the font size of the links */
+    font-family: 'Anton', sans-serif;
+
+  }
+
+  nav li:last-child {
+    margin-right: 0; /*removes margin from margin right, it can make the navbar straight */
+  }
+
+  nav li a:hover {
+    background-color: #111; /* add a background color to the links when hovered over */
+  }
+
+
+/*screen changes when moved*/
+@media only screen and (max-width: 900px) {
+  body {
+    background-color: rgb(61, 61, 61);
+    background-image: url('../Mathgame/images/math.jpg');
+  }
+}
